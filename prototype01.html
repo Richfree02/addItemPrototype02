@@ -6,9 +6,11 @@
   </head>
 
   <body>
-    <form>
-      <h1 id="header">Hello darkness my old friend</h1>
-      <input id="prototypeButton"class="button" type="button" name="hello" value="Doesn't work">
+    <form action="/script.js" method="GET">
+      <h1 id="header">To Do List</h1>
+      <label for="textField">New Task:</label>
+      <input type="text" name="hello" id="textField">
+      <input id="prototypeButton"class="button" type="button" name="hello" value="Submit">
     </form>
     <ul id="addMoreLi">
       <li id="example">Example</li>
