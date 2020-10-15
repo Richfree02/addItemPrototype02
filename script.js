@@ -1,5 +1,5 @@
 
-console.log("I no suck anymorr :D");
+console.log("I still suck D: ");
 /*
 //button programing
 var getThat = document.getElementsByClassName('button');
@@ -34,6 +34,25 @@ for (var i = 0; i < getThat.length; i++){
 }
 */
 
+/*
+for(var i; i < getRemBtn.length; i++){
+  var rButton = getRemBtn[i];
+  rButton.addEvenListener('click', function(event){
+    var buttonClicked = event.target;
+    buttonClicked.parentElement.remove();
+  })
+}
+*/
+
+var getRemBtn = document.getElementsByClassName('removalButton');
+for(var i; i < getRemBtn.length; i++){
+  rButton = getRemBtn.length[i];
+  rButton.addEventListener('click', function(event){
+    var buttonClicked = event.target;
+    buttonClicked.parentElement.remove();
+  })
+}
+
 function addItem(){
   var ul = document.getElementById('addMoreLi');
   var li = document.createElement('li');
@@ -42,6 +61,14 @@ function addItem(){
       checkbox.type = 'checkbox';
       checkbox.value = '1';
       checkbox.name = 'name';
+  
+  var remBtn = document.createElement('input');
+      remBtn.type = 'button';
+      remBtn.value = 'REMOVE';
+      remBtn.name = 'name';
+      remBtn.className = 'removalButton';
+
+  li.appendChild(remBtn);
 
   li.appendChild(checkbox);
 
@@ -52,3 +79,4 @@ function addItem(){
 
 var btn = document.getElementById('prototypeButton');
 btn.onclick = addItem;
+
