@@ -1,2 +1,2 @@
-# addItemPrototype02
-I atempt making more functional buttons and things to finnally build my todo list
+# To do list prototype 02
+Building a functioning to do list
